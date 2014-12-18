@@ -1,0 +1,74 @@
+body {
+  background-color: #27272B;
+  background-image: url("/images/nodes.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: #999999;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  padding: 40px 0 100px 0;
+}
+  .container:before,
+  .container:after {
+    content: " ";
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+
+a.button {
+  display: inline-block;
+  border: 1px solid #DE4F4F;
+  color: #DE4F4F;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  width: 320px;
+  height: 60px;
+  line-height: 60px;
+}
+  a.button:hover {
+    background: #DE4F4F;
+    color: #27272B;
+  }
+
+.content {
+  width: 500px;
+  margin-right: 80px;
+  float: left;
+  padding-top: 180px;
+}
+  .content-inner {
+    padding-left: 122px;
+  }
+
+.device {
+  position: relative;
+  float: left;
+  width: 395px;
+  height: 813px;
+  background-image: url("/images/device.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.device-content {
+  position: absolute;
+  top: 121px;
+  left: 35px;
+  width: 324px;
+  height: 577px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 0;
+}
