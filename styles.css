@@ -2,7 +2,7 @@ body {
   background-color: #27272B;
   background-image: url("/images/nodes.png");
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom center;
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
   color: #999999;
   font-size: 28px;
@@ -36,9 +36,15 @@ a.button {
   height: 60px;
   line-height: 60px;
 }
+  a svg {
+    vertical-align: middle;
+  }
   a.button:hover {
     background: #DE4F4F;
     color: #27272B;
+  }
+  a.button:hover svg path {
+    fill: #27272B;
   }
 
 .content {
