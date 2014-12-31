@@ -1,3 +1,9 @@
+*, *:focus, *:active {
+  outline: none;
+}
+::-moz-selection { background: #FF9595; }
+::selection { background: #FF9595; }
+
 body {
   background-color: #27272B;
   background-image: url("/images/nodes.png");
@@ -22,6 +28,11 @@ body {
   .container:after {
     clear: both;
   }
+
+a, a:link, a:visited, a:hover, a:active {
+  color: #DE4F4F;
+  text-decoration: none;
+}
 
 a.button {
   display: inline-block;
@@ -57,6 +68,24 @@ a.button {
     padding-left: 122px;
   }
 
+.credits {
+  font-size: 13px;
+  line-height: 24px;
+  padding-top: 24px;
+}
+  .credits a {
+    color: #999999;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  .credits a:hover {
+    color: #DE4F4F;
+  }
+  .credits a img {
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+
 .device {
   position: relative;
   float: left;
@@ -78,3 +107,46 @@ a.button {
   background-color: #fff;
   border: 0;
 }
+
+.platform-switcher {
+  width: 160px;
+  height: 40px;
+  border: 4px solid #DE4F4F;
+  border-radius: 30px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -80px;
+}
+.platform-switcher a {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: top;
+  position: absolute;
+}
+  .platform-switcher a.platform-ios {
+    top: 0;
+    left: 0;
+    text-indent: 6px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .platform-switcher a.platform-android {
+    top: 0;
+    right: 0;
+    text-indent: -6px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .platform-switcher a svg {
+    vertical-align: middle;
+  }
+  .platform-switcher a:hover, .platform-switcher a.selected {
+    background: #DE4F4F;
+  }
+    .platform-switcher a:hover svg path, .platform-switcher a.selected svg path {
+      fill: #27272B;
+    }
